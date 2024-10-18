@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+  >
+    <!-- Action bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Sending Data - Main" />
+    <!-- TextView to display replies -->
+    <TextView
+        android:id="@+id/repliedMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="No replies yet" />
+
+    <!-- EditText for user input -->
+    <EditText
+        android:id="@+id/editTextMain"
+        android:layout_margin="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter message to send" />
+
+    <!-- Button to send data to SecondActivity -->
+    <Button
+        android:id="@+id/main_send_button"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/eastern_blue"
+        android:text="Send" />
+</LinearLayout>
